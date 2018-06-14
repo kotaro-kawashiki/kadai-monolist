@@ -12,9 +12,7 @@
 */
 
 Route::get('','WelcomeController@index');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 //regisration
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');

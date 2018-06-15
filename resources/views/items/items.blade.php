@@ -23,6 +23,7 @@
                          @if (isset($item->count))
                             <div class="panel-footer">
                                 <p class="text-center">{{ $key+1 }}位: {{ $item->count}} {{ $ranking_name }}</p>
+                                   <!--you need $key because keys start with 0. $ranking_name is defined on RankingController and it is up to which routes you go through-->
                             </div>
                         @endif
 
